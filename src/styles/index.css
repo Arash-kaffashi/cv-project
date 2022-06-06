@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+.App {
+	margin: 1em auto;
+	padding: 1em;
+	border: 2px solid whitesmoke;
+	max-width: 21cm;
+	min-height: calc(100vh - 2 * 2 * 1em - 2 * 2px);
+}
+.general,
+.education,
+.work {
+	margin: 1em;
+}
+
+.general .head {
+	border-bottom: 5px solid rgb(163, 202, 204);
+	border-radius: 5px;
+	display: flex;
+}
+
+.general .title {
+	text-align: center;
+	flex: 1 1 auto;
+}
+
+.general .subtitle {
+	margin: 0.5em 0;
+}
+
+.general .personal {
+	display: flex;
+	text-align: center;
+	flex: 0 1 max-content;
+	flex-flow: column nowrap;
+	text-align: right;
+}
+.personal > p {
+	flex-grow: 1;
+}
+
+.education > h2,
+.work > h2 {
+	border-bottom: 2px solid rgb(163, 202, 204);
+	width: max-content;
+}
+
+.education > div,
+.work > div {
+	align-items: baseline;
+	display: flex;
+	flex-flow: row wrap;
+
+	border-left: 1px solid black;
+	margin: 1em 0;
+	padding-left: 0.5em;
+	column-gap: 1em;
+	row-gap: 0.5em;
+}
+
+.education .title,
+.work .title {
+	font-weight: bold;
+	flex: 1 1 auto;
+}
+
+.education .college,
+.work .company {
+	border-right: 1px solid black;
+	padding-right: 1em;
+}
+
+.education .period,
+.work .period {
+	flex-basis: 8em;
+	text-align: right;
+}
+
+.education .description,
+.work .description {
+	flex: 1 1 100%;
+}
